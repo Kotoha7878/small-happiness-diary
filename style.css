@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #4f4945;
+    background: #fffaf5;
+    font-family:
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 40px auto;
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 8px;
+    color: #d97878;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #817873;
+}
+
+.message {
+    padding: 12px 16px;
+    border-left: 5px solid #e99b9b;
+    border-radius: 5px;
+    background: #fff0f0;
+}
+
+.form-box {
+    margin-bottom: 28px;
+    padding: 24px;
+    border: 1px solid #eaded5;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(80, 60, 50, 0.06);
+}
+
+.editing {
+    border: 2px solid #e7a84b;
+    background: #fffdf3;
+}
+
+.form-item {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5cbc5;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.counter {
+    margin-top: 4px;
+    color: #8b817b;
+    text-align: right;
+    font-size: 13px;
+}
+
+button,
+input[type="submit"] {
+    width: auto;
+    padding: 10px 24px;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    background: #d97878;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.delete-button {
+    background: #9a5555;
+}
+
+.records {
+    display: grid;
+    gap: 18px;
+}
+
+.record {
+    padding: 20px;
+    border-left: 6px solid #e99b9b;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(80, 60, 50, 0.06);
+}
+
+.record-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    padding: 4px 10px;
+    border-radius: 15px;
+    color: #9b6262;
+    background: #ffe7e7;
+    font-size: 13px;
+}
+
+.record-text {
+    line-height: 1.8;
+}
+
+.record-meta {
+    color: #8b817b;
+    font-size: 13px;
+}
+
+.small-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: end;
+}
+
+@media (max-width: 650px) {
+    .small-form {
+        grid-template-columns: 1fr;
+    }
+}
